@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ButtonXib" customModuleProvider="target">
+            <connections>
+                <outlet property="countingLabel" destination="WEE-fF-Dm3" id="JL7-ty-Lec"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqH-sg-3mN">
+                    <rect key="frame" x="0.0" y="353" width="1024" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="YXu-pq-Ko8"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Minus">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                        <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="minusCountButton" destination="-1" eventType="touchUpInside" id="zmk-6D-bmm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nc-9I-PCH">
+                    <rect key="frame" x="0.0" y="196" width="1024" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="z0l-hp-bi4"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Plus">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                        <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="plusCountButton" destination="-1" eventType="touchUpInside" id="WH6-l9-h5A"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press smth Bruh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEE-fF-Dm3">
+                    <rect key="frame" x="0.0" y="45" width="1024" height="57.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57.5" id="Zmb-2k-xwL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBlueColor"/>
+            <constraints>
+                <constraint firstItem="RqH-sg-3mN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3ST-bk-5Ko"/>
+                <constraint firstItem="RqH-sg-3mN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7ca-j4-le9"/>
+                <constraint firstItem="WEE-fF-Dm3" firstAttribute="leading" secondItem="4Nc-9I-PCH" secondAttribute="leading" id="8YW-I4-3WS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RqH-sg-3mN" secondAttribute="bottom" constant="20" id="8ey-pi-Icl"/>
+                <constraint firstItem="4Nc-9I-PCH" firstAttribute="top" secondItem="WEE-fF-Dm3" secondAttribute="bottom" constant="93.5" id="CMU-RJ-dtI"/>
+                <constraint firstItem="WEE-fF-Dm3" firstAttribute="leading" secondItem="RqH-sg-3mN" secondAttribute="leading" id="JwD-aG-OGc"/>
+                <constraint firstItem="WEE-fF-Dm3" firstAttribute="trailing" secondItem="RqH-sg-3mN" secondAttribute="trailing" id="cwP-b1-gFp"/>
+                <constraint firstItem="RqH-sg-3mN" firstAttribute="top" secondItem="4Nc-9I-PCH" secondAttribute="bottom" constant="67" id="fGl-PK-6nD"/>
+                <constraint firstItem="RqH-sg-3mN" firstAttribute="top" secondItem="4Nc-9I-PCH" secondAttribute="bottom" constant="67" id="lgi-cw-HQK"/>
+                <constraint firstItem="WEE-fF-Dm3" firstAttribute="trailing" secondItem="4Nc-9I-PCH" secondAttribute="trailing" id="vUu-05-k8B"/>
+                <constraint firstItem="WEE-fF-Dm3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="wpe-NI-I0n"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="inK-Yo-uLC">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="31"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+            <buttonConfiguration key="configuration" style="filled" title="Button"/>
+            <point key="canvasLocation" x="-118.84057971014494" y="90.736607142857139"/>
+        </button>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
