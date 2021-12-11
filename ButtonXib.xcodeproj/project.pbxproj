@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4A506D72764CC5C001F6C20 /* ScreenTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A506D52764CC5C001F6C20 /* ScreenTwoViewController.swift */; };
+		E4A506D82764CC5C001F6C20 /* ScreenTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A506D62764CC5C001F6C20 /* ScreenTwoViewController.xib */; };
 		E4CCCCE12764935900A9D402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCCCE02764935900A9D402 /* AppDelegate.swift */; };
 		E4CCCCE32764935900A9D402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCCCE22764935900A9D402 /* SceneDelegate.swift */; };
 		E4CCCCEA2764935900A9D402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CCCCE92764935900A9D402 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4A506D52764CC5C001F6C20 /* ScreenTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwoViewController.swift; sourceTree = "<group>"; };
+		E4A506D62764CC5C001F6C20 /* ScreenTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenTwoViewController.xib; sourceTree = "<group>"; };
 		E4CCCCDD2764935900A9D402 /* ButtonXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CCCCE02764935900A9D402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4CCCCE22764935900A9D402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4A506D32764CBFB001F6C20 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E4CCCD142764941A00A9D402 /* HomeViewController.swift */,
+				E4CCCD152764941A00A9D402 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E4A506D42764CC1E001F6C20 /* ScreenTwo */ = {
+			isa = PBXGroup;
+			children = (
+				E4A506D52764CC5C001F6C20 /* ScreenTwoViewController.swift */,
+				E4A506D62764CC5C001F6C20 /* ScreenTwoViewController.xib */,
+			);
+			path = ScreenTwo;
+			sourceTree = "<group>";
+		};
 		E4CCCCD42764935900A9D402 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +121,13 @@
 		E4CCCCDF2764935900A9D402 /* ButtonXib */ = {
 			isa = PBXGroup;
 			children = (
+				E4A506D42764CC1E001F6C20 /* ScreenTwo */,
+				E4A506D32764CBFB001F6C20 /* Home */,
 				E4CCCCE02764935900A9D402 /* AppDelegate.swift */,
 				E4CCCCE22764935900A9D402 /* SceneDelegate.swift */,
 				E4CCCCE92764935900A9D402 /* Assets.xcassets */,
 				E4CCCCEB2764935900A9D402 /* LaunchScreen.storyboard */,
 				E4CCCCEE2764935900A9D402 /* Info.plist */,
-				E4CCCD142764941A00A9D402 /* HomeViewController.swift */,
-				E4CCCD152764941A00A9D402 /* HomeViewController.xib */,
 			);
 			path = ButtonXib;
 			sourceTree = "<group>";
@@ -232,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CCCCED2764935900A9D402 /* LaunchScreen.storyboard in Resources */,
+				E4A506D82764CC5C001F6C20 /* ScreenTwoViewController.xib in Resources */,
 				E4CCCCEA2764935900A9D402 /* Assets.xcassets in Resources */,
 				E4CCCD172764941A00A9D402 /* HomeViewController.xib in Resources */,
 			);
@@ -259,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CCCCE12764935900A9D402 /* AppDelegate.swift in Sources */,
+				E4A506D72764CC5C001F6C20 /* ScreenTwoViewController.swift in Sources */,
 				E4CCCCE32764935900A9D402 /* SceneDelegate.swift in Sources */,
 				E4CCCD162764941A00A9D402 /* HomeViewController.swift in Sources */,
 			);
