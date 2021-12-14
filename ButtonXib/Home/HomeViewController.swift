@@ -30,4 +30,10 @@ class HomeViewController: UIViewController {
         count -= 1
         countingLabel.text = String(count)}
     
+    // Screen transition to the new TableView Element logic
+    @IBAction func tableTransitionButton() {
+        let screenTwoVC = ScreenTwoViewController()
+        self.navigationController?.pushViewController(screenTwoVC, animated: true)
+    }
+    
 }

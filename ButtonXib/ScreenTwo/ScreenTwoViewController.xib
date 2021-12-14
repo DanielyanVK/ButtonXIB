@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScreenTwoViewController" customModule="ButtonXib" customModuleProvider="target">
             <connections>
+                <outlet property="songsTableView" destination="ul1-VG-faG" id="20A-rp-Mas"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,27 +19,27 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upr-RM-BkP">
-                    <rect key="frame" x="99" y="137" width="216" height="116"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Back"/>
-                    <connections>
-                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="EQp-eP-X7X"/>
-                    </connections>
-                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ul1-VG-faG">
+                    <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="separatorColor" systemColor="systemOrangeColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
             <constraints>
-                <constraint firstItem="upr-RM-BkP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Er-HD-bTg"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="upr-RM-BkP" secondAttribute="bottom" constant="609" id="ObV-Pl-8rb"/>
-                <constraint firstItem="upr-RM-BkP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="99" id="XWz-Ri-40Z"/>
-                <constraint firstItem="upr-RM-BkP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="93" id="mKy-VY-rZ4"/>
+                <constraint firstItem="ul1-VG-faG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="A9n-Gz-THs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ul1-VG-faG" secondAttribute="trailing" id="Eo5-qG-MRc"/>
+                <constraint firstItem="ul1-VG-faG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="IKE-gO-6q2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ul1-VG-faG" secondAttribute="bottom" id="Pwp-y8-X5u"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

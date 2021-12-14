@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41505242767BDD300824074 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41505222767BDD300824074 /* SongTableViewCell.swift */; };
+		E41505252767BDD300824074 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41505232767BDD300824074 /* SongTableViewCell.xib */; };
 		E4A506D72764CC5C001F6C20 /* ScreenTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A506D52764CC5C001F6C20 /* ScreenTwoViewController.swift */; };
 		E4A506D82764CC5C001F6C20 /* ScreenTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A506D62764CC5C001F6C20 /* ScreenTwoViewController.xib */; };
 		E4CCCCE12764935900A9D402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCCCE02764935900A9D402 /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E41505222767BDD300824074 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		E41505232767BDD300824074 /* SongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
 		E4A506D52764CC5C001F6C20 /* ScreenTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwoViewController.swift; sourceTree = "<group>"; };
 		E4A506D62764CC5C001F6C20 /* ScreenTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenTwoViewController.xib; sourceTree = "<group>"; };
 		E4CCCCDD2764935900A9D402 /* ButtonXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +125,7 @@
 		E4CCCCDF2764935900A9D402 /* ButtonXib */ = {
 			isa = PBXGroup;
 			children = (
+				E4EC16C8276765D5001BE78F /* TableCell */,
 				E4A506D42764CC1E001F6C20 /* ScreenTwo */,
 				E4A506D32764CBFB001F6C20 /* Home */,
 				E4CCCCE02764935900A9D402 /* AppDelegate.swift */,
@@ -147,6 +152,15 @@
 				E4CCCD032764935900A9D402 /* ButtonXibUITestsLaunchTests.swift */,
 			);
 			path = ButtonXibUITests;
+			sourceTree = "<group>";
+		};
+		E4EC16C8276765D5001BE78F /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				E41505222767BDD300824074 /* SongTableViewCell.swift */,
+				E41505232767BDD300824074 /* SongTableViewCell.xib */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41505252767BDD300824074 /* SongTableViewCell.xib in Resources */,
 				E4CCCCED2764935900A9D402 /* LaunchScreen.storyboard in Resources */,
 				E4A506D82764CC5C001F6C20 /* ScreenTwoViewController.xib in Resources */,
 				E4CCCCEA2764935900A9D402 /* Assets.xcassets in Resources */,
@@ -283,6 +298,7 @@
 			files = (
 				E4CCCCE12764935900A9D402 /* AppDelegate.swift in Sources */,
 				E4A506D72764CC5C001F6C20 /* ScreenTwoViewController.swift in Sources */,
+				E41505242767BDD300824074 /* SongTableViewCell.swift in Sources */,
 				E4CCCCE32764935900A9D402 /* SceneDelegate.swift in Sources */,
 				E4CCCD162764941A00A9D402 /* HomeViewController.swift in Sources */,
 			);
@@ -459,7 +475,7 @@
 				INFOPLIST_FILE = ButtonXib/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,7 +502,7 @@
 				INFOPLIST_FILE = ButtonXib/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
